@@ -1,0 +1,13 @@
+name: 'Your inclusive bot'
+description: 'A Github action to detect unfriendly or not inclusive words in a PR'
+inputs:
+  github_token:
+    description: 'Your GitHub Token'
+    required: true
+  message:
+    description: 'Message that displays when unfriendly or not inclusive words are found'
+    required: false
+    default: 'Some unfriendly or not inclusive words have been spotted'
+runs:
+  using: 'node12'
+  main: 'index.js'
